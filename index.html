@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Gallery</h1>
+            <nav class="nav">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="urban">Urban</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main class="main">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+            </div>
+        </div>
+    </main>
+
+    
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="closeLightbox">&times;</button>
+            <button class="lightbox-nav lightbox-prev" id="prevBtn">&#10094;</button>
+            <img class="lightbox-image" id="lightboxImage" src="/placeholder.svg" alt="Gallery image">
+            <button class="lightbox-nav lightbox-next" id="nextBtn">&#10095;</button>
+            <div class="lightbox-info">
+                <p class="lightbox-title" id="lightboxTitle"></p>
+                <p class="lightbox-counter"><span id="currentIndex">1</span> / <span id="totalImages">1</span></p>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="footer">
+        <p>&copy; 2025 Image Gallery. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
